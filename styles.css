@@ -95,6 +95,8 @@ body {
 
 main {
     padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .search-bar {
@@ -113,5 +115,54 @@ main {
     width: 100%;
     margin-left: 10px;
     outline: none;
-    
+}
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+
+.artist-card, .album-card {
+    background-color: #181818;
+    padding: 16PX;
+    border-radius: 8PX;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.artist-card:hover, .album-card:hover  {
+    background-color: #282828;
+}
+
+.artist-card img, .album-card img {
+    width: 100%;
+    max-height: 70%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+
+}
+
+.artist-card h3, .album-card h3 {
+    font-size: 12px;
+}
+
+.artist-card p, .album-card p {
+    font-size: 12px;
+    color: #B7B3B6;
+}
+
+.content {
+    margin-top: 50px;
+
+}
+
+.content h2 {
+    margin-bottom: 20px;
 }

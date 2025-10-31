@@ -166,3 +166,34 @@ main {
 .content h2 {
     margin-bottom: 20px;
 }
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #AF2896, #509BF5);
+    justify-content: center;
+    align-items: center;
+    padding: 8px 14px;
+
+}
+
+.banner  h2 {
+    font-size: 14px;
+
+}
+
+.banner  p {
+    font-size: 12px;
+    
+}
+
+.banner  button {
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
